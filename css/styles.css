@@ -1,41 +1,149 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-img {
-    display: block;
-    max-width: 100%;
+.card__image {
+  display: block;
+  max-width: 100%;
+
+  border-radius: 10px;
+}
+.image-eye {
+  position: absolute;
+  opacity: 0;
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.image-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 302px;
+  background-color: #00fff763;
+  opacity: 0;
+}
+@media (hover: hover) {
+  .image-container:hover::after {
+    opacity: 1;
+    border-radius: 10px;
+  }
+
+  .image-container:hover .image-eye {
+    opacity: 1;
+  }
 }
 
 body {
-    margin: 0;
-    font-family: "Outfit", sans-serif;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+main {
+  padding: 24px;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 0;
+  }
 }
 
 .card {
-    background-color: #15263F;
+  background-color: #15263f;
+  padding: 24px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    width: 350px;
+  }
 }
 
 .card__title {
-    font-weight: 300;
-    font-size: 18px;
-    color: white;
+  font-weight: 300;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 14px;
+  line-height: 26px;
+  margin-top: 0;
+  font-weight: 600;
+}
+
+@media (hover: hover) {
+  .card__title:hover {
+    color: #00fff8;
+  }
 }
 
 .card__body {
-    font-weight: 300;
-    font-size: 18px;
-    color: #8BACD9;
+  font-weight: 300;
+  font-size: 18px;
+  color: #8bacd9;
+  line-height: 26px;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 16px;
 }
 
 .card__value {
-    color: #00FFF8;
-    font-weight: 600;
-    font-size: 15px;
+  color: #00fff8;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .card__time {
-    color: #8BACD9;
-    font-weight: 500;
-    font-size: 15px;
+  color: #8bacd9;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.line {
+  border-bottom: 1px solid;
+  margin-bottom: 16px;
+  color: #8bacd9;
+}
+
+.container-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.icon {
+  width: 33px;
+  display: flex;
+  margin: 0;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+}
+@media (hover: hover) {
+  .text:hover {
+    color: #00fff8;
+  }
+}
+.text-blue {
+  color: #8bacd9;
+  font-size: 15px;
 }

@@ -1,33 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Flexbox</title>
-</head>
+  </head>
 
-<body>
-    <section class="card">
-        <img src="./assets/images/image-equilibrium.jpg" alt="Equilibrium">
+  <body>
+    <main class="main">
+      <section class="card">
+        <div class="image-container">
+          <img
+            class="card__image"
+            src="./assets/images/image-equilibrium.jpg"
+            alt="Equilibrium"
+          />
+          <img class="image-eye" src="./assets/images/icon-view.svg" alt="" />
+        </div>
         <h2 class="card__title">Equilibrium #3429</h2>
-        <p class="card__body">Our Equilibrium collection promotes balance and calm.</p>
-        <span class="card__value" img src="./assets/images/icon-ethereum.svg" alt="Etherum">0.041 ETH</span>
-        <span class="card__time" img src="./assets/images/icon-clock.svg" alt="clock">3 days left</span>
+        <p class="card__body">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="card__container">
+          <span
+            class="card__value"
+            img
+            src="./assets/images/icon-ethereum.svg"
+            alt="Etherum"
+            >0.041 ETH</span
+          >
+          <span
+            class="card__time"
+            img
+            src="./assets/images/icon-clock.svg"
+            alt="clock"
+            >3 days left</span
+          >
+        </div>
 
-        <div class="line-separation"></div>
-
-        <img src="./assets/images/image-avatar.png" alt="avatar">
-        <span class="card__user">Creation of Jules Wyvern</span>
-
-        </span>
-    </section>
-</body>
-
+        <div class="line"></div>
+        <div class="container-icon">
+          <img
+            class="icon"
+            src="./assets/images/image-avatar.png"
+            alt="avatar"
+          />
+          <span class="text">
+            <span class="text-blue">Creation of</span> Jules Wyvern</span
+          >
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
